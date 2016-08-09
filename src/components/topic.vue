@@ -3,6 +3,11 @@
   .mint-header {
     background-color: #42b983;
   }
+  .topic-box {
+    ul {
+      margin-bottom: 50px;
+    }
+  }
   .topic-content{
     padding: 3%;
     padding-top: 38px;

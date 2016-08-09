@@ -9,11 +9,7 @@
     box-shadow: 0 0 4px rgba(0, 0, 0, .25);
 }
 
-.list-box {
-}
-
 ul {
-  margin-bottom: 50px;
     li {
         padding: 10px 15px;
         border-bottom: 1px solid #d5dbdb;
