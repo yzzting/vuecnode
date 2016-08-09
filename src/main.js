@@ -22,7 +22,10 @@ new Vue({
   components: { App }
 })
 
-let router = new VueRouter()
+let router = new VueRouter({
+  history: true,//html5 模式 去除地址中的#
+  saveScrollPosition: true
+})
 
 router.map({
   '/':{
