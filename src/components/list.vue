@@ -5,6 +5,10 @@
     color: #42b983;
 }
 
+.mint-loadmore-content {
+  margin-bottom: 50px;
+}
+
 .page-part {
     box-shadow: 0 0 4px rgba(0, 0, 0, .25);
 }
@@ -101,6 +105,17 @@ ul {
     }
 }
 
+.moreButton {
+  margin: 10px 5px 60px 5px;
+    button{
+      padding: 0 16px;
+      line-height: 32px;
+      border-radius: 5px;
+      width: 100%;
+      max-width: none;
+    }
+}
+
 </style>
 
 <template>
@@ -112,27 +127,30 @@ ul {
     <mt-tab-item id="ask">问答</mt-tab-item>
     <mt-tab-item id="job">招聘</mt-tab-item>
 </mt-navbar>
-<div class="list-box">
-    <mt-loadmore :top-method="loadTop" :bottom-method="loadBottom" :bottom-all-loaded="allLoaded">
-        <ul>
-            <li v-for="item in topics" v-link="{name:'topic',params:{id: item.id}}">
-                <figure class="tab-style" :class="[{'top': item.top, 'good': item.good}, item.tab]" data-tab="{{item.top === true ? 'top' : item.good === true ? 'good' : item.tab | tab}}">{{item.title}}</figure>
-                <div class="user-show">
-                    <img :src="item.author.avatar_url" alt="photo" />
-                    <div class="user-info">
-                        <p>
-                            <span class="name">{{item.author.loginname}}</span>
-                            <span class="visitnum"><b>{{item.reply_count}}</b>/{{item.visit_count}}</span>
-                        </p>
-                        <p>
-                            <span class="create-time">{{item.create_at | date 'ago'}}</span>
-                            <span class="last-reply-time">{{item.last_reply_at | date 'ago'}}</span>
-                        </p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </mt-loadmore>
+  <div class="list-box">
+
+    <ul>
+      <li v-for="item in topics" v-link="{name:'topic',params:{id: item.id}}">
+        <figure class="tab-style" :class="[{'top': item.top, 'good': item.good}, item.tab]" data-tab="{{item.top === true ? 'top' : item.good === true ? 'good' : item.tab | tab}}">{{item.title}}</figure>
+        <div class="user-show">
+          <img :src="item.author.avatar_url" alt="photo" />
+          <div class="user-info">
+            <p>
+              <span class="name">{{item.author.loginname}}</span>
+              <span class="visitnum"><b>{{item.reply_count}}</b>/{{item.visit_count}}</span>
+            </p>
+            <p>
+              <span class="create-time">{{item.create_at | date 'ago'}}</span>
+              <span class="last-reply-time">{{item.last_reply_at | date 'ago'}}</span>
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="moreButton">
+      <mt-button type="primary" @click="getNextPage()">{{buttonText}}</mt-button>
+    </div>
+
 </div>
 
 </template>
@@ -140,68 +158,62 @@ ul {
 <script>
 
 import {
-    Indicator
+    Indicator,
 }
 from 'mint-ui'
 export default {
     data() {
             return {
                 topics: [],
-                page:1
+                page: 1,
+                buttonText:'加载更多',
             }
         },
-        methods: {
-            getData() {
-                return this.$http.get('/api/topics', {
-                    params: {
-                        tab: this.selected,
-                        page:this.page,
-                        limit: 10
-                    }
-                })
-            },
-            loadTop(id) {
-              this.page = 1
-              this.getData().then((response) => {
-                this.topics = response.json().data
-                this.$broadcast('onTopLoaded',id)
-              })
-            },
-            loadBottom(id) {
-              this.page += 1
-              this.getData().then((response) => {
+    methods: {
+        getNextPage(){
+          this.page += 1
+          this.getData()
+              .then((response) => {
                 this.topics = this.topics.concat(response.json().data)
-                this.$broadcast('onBottomLoaded',id)
               })
-            }
+          this.buttonText = '正在加载...'
         },
-        ready() {
+        getData() {
+            return this.$http.get('/api/topics', {
+                params: {
+                    page: this.page,
+                    tab: this.selected,
+                }
+            })
+        }
+    },
+    ready() {
+        Indicator.open({
+          text: 'loading...',
+          spinnerType:'double-bounce'
+        })
+        this.getData()
+            .then((response) => {
+                this.topics = response.json().data
+                Indicator.close()
+            }, (err) => {
+                console.error('err', err);
+            })
+    },
+    watch: {
+        selected() {
+            this.page = 1
             Indicator.open({
-              text: 'loading...',
-              spinnerType:'double-bounce'
+              text:'biu biu biu...',
+              spinnerType: 'double-bounce'
             })
             this.getData()
                 .then((response) => {
                     this.topics = response.json().data
                     Indicator.close()
-                }, (err) => {
-                    console.error('err', err);
                 })
-        },
-        watch: {
-            selected() {
-                this.page = 1
-                Indicator.open({
-                  text:'biu biu biu...',
-                  spinnerType: 'double-bounce'
-                })
-                this.getData()
-                    .then((response) => {
-                        this.topics = response.json().data
-                        Indicator.close()
-                    })
-            }
         }
+    }
 }
 
 </script>

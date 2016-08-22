@@ -16,12 +16,6 @@ Object.keys(filters).forEach((key) => {
     Vue.filter(key, filters[key])
 })
 
-/* eslint-disable no-new */
-new Vue({
-  el: 'body',
-  components: { App }
-})
-
 let router = new VueRouter({
   history: true,//html5 模式 去除地址中的#
   saveScrollPosition: true
