@@ -5,12 +5,20 @@
     color: #42b983;
 }
 
+.mint-tabbar>.mint-tab-item.is-selected {
+  color: #42b983;
+}
+
 .mint-loadmore-content {
   margin-bottom: 50px;
 }
 
 .page-part {
     box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+  }
+
+.list-box {
+  margin-top: 50px;
 }
 
 ul {
@@ -116,11 +124,22 @@ ul {
     }
 }
 
+.toTop {
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  font-size: 30px;
+  z-index: 9999;
+  color: #42b983;
+}
+
+@import "../assets/css/iconfont.css";
+
 </style>
 
 <template>
 
-<mt-navbar class="page-part" :selected.sync="selected">
+<mt-navbar class="page-part" :selected.sync="selected" fixed>
     <mt-tab-item id="all">全部</mt-tab-item>
     <mt-tab-item id="good">精华</mt-tab-item>
     <mt-tab-item id="share">分享</mt-tab-item>
@@ -128,7 +147,6 @@ ul {
     <mt-tab-item id="job">招聘</mt-tab-item>
 </mt-navbar>
   <div class="list-box">
-
     <ul>
       <li v-for="item in topics" v-link="{name:'topic',params:{id: item.id}}">
         <figure class="tab-style" :class="[{'top': item.top, 'good': item.good}, item.tab]" data-tab="{{item.top === true ? 'top' : item.good === true ? 'good' : item.tab | tab}}">{{item.title}}</figure>
@@ -150,7 +168,9 @@ ul {
     <div class="moreButton">
       <mt-button type="primary" @click="getNextPage()">{{buttonText}}</mt-button>
     </div>
-
+    <!-- <div class="toTop iconfont" @click="toTop()">
+      &#xe601;
+    </div> -->
 </div>
 
 </template>
@@ -167,6 +187,7 @@ export default {
                 topics: [],
                 page: 1,
                 buttonText:'加载更多',
+                top:false
             }
         },
     methods: {
@@ -175,18 +196,24 @@ export default {
           this.getData()
               .then((response) => {
                 this.topics = this.topics.concat(response.json().data)
+                this.buttonText = '加载更多'
               })
-          this.buttonText = '正在加载...'
+              this.buttonText = '正在加载...'
         },
         getData() {
             return this.$http.get('/api/topics', {
                 params: {
                     page: this.page,
                     tab: this.selected,
+                    limit:10
                 }
             })
         }
     },
+    props: [{
+        'name': 'selected',
+        'default': 'all'
+    }],
     ready() {
         Indicator.open({
           text: 'loading...',
@@ -199,6 +226,7 @@ export default {
             }, (err) => {
                 console.error('err', err);
             })
+
     },
     watch: {
         selected() {
