@@ -82,7 +82,12 @@
           localStorage.avatar_url = resJson.avatar_url
           localStorage.accesstoken = this.token
           localStorage.id = resJson.id
-          this.$route.router.go({name:'user'})
+          let backUrl = this.$route.query.backUrl
+          if(/user/.test(backUrl)){
+              this.$route.router.go({name: 'user', params: {loginname: localStorage.loginname}})
+          }else{
+              this.$route.router.go({name: backUrl})
+          }
         })
       }
     }

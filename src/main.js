@@ -52,7 +52,7 @@ router.map({
       require(['./components/login.vue'],resolve)
     }
   },
-  '/user/:username':{
+  '/user/:loginname':{
     name:'user',
     component:function(resolve){
       require(['./components/user.vue'],resolve)
@@ -65,6 +65,19 @@ router.map({
       require(['./components/message.vue'],resolve)
     },
     auth:true
+  }
+})
+
+router.beforeEach(({to,next,redirect}) => {
+  if (to.auth) {
+    if (localStorage.id) {
+      next()
+    }else{
+      let backUrl = encodeURIComponent(to.path)
+      redirect(`/login?backUrl=${backUrl}`)
+    }
+  }else{
+    next()
   }
 })
 
