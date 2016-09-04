@@ -28,21 +28,21 @@
 
 <div class="main">
     <router-view></router-view>
-    <div class="bottom-box">
+    <div class="bottom-box" v-if="!isLogin">
         <mt-tabbar :selected.sync="btn">
-            <mt-tab-item id="topic" v-link="'list'">
+            <mt-tab-item id="list">
               <img src="./assets/node.png" alt="photo" slot="icon"/>
               话题
             </mt-tab-item>
-            <mt-tab-item id="message" v-link="'login'">
+            <mt-tab-item id="message">
               <img src="./assets/message.png" alt="photo" slot="icon"/>
               消息
             </mt-tab-item>
-            <mt-tab-item id="user" v-link="'message'">
+            <mt-tab-item id="user">
               <img src="./assets/me.png" alt="photo" slot="icon"/>
               我的
             </mt-tab-item>
-            <mt-tab-item id="about" v-link="'about'">
+            <mt-tab-item id="about">
               <img src="./assets/about.png" alt="photo" slot="icon"/>
               关于
             </mt-tab-item>
@@ -57,7 +57,28 @@
 export default {
   data() {
     return {
-      btn:''
+      btn: this.$route.path.split('/')[1]
+    }
+  },
+  computed: {
+    isLogin() {
+      return this.$route.path == '/' || this.$route.path == '/login'
+    }
+  },
+  watch: {
+    'btn' : function(val) {
+      if (this.btn == 'user') {
+        this.$route.router.go ({
+          name:'user',
+          params: {
+            loginname: localSrorage.loginname
+          }
+        })
+      }else{
+        this.$route.router.go({
+          name:this.btn
+        })
+      }
     }
   }
 }
