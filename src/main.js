@@ -6,7 +6,7 @@ import App from './App'
 //global normalize scss
 
 import 'normalize.css/normalize.css'
-
+import '../static/scss/global.scss'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
