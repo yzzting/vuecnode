@@ -1,0 +1,22 @@
+$header-background-color: #42b983;
+@mixin mint-header (){
+    background-color: $header-background-color!important;
+}
+
+@mixin leftBox () {
+    background-color: #ffffff;
+    height: 100%;
+    width: 200px;
+    position: relative;
+    z-index: 999;
+    top:0;
+    left:0;
+}
+
+.mint-header {
+    @include mint-header;
+}
+
+.leftBox {
+    @include leftBox;
+}

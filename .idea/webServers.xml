@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b68aed51-06bc-4ba4-a728-304d19f9917f" name="腾讯云" url="http://119.29.105.157">
+        <fileTransfer host="119.29.105.157" port="22" rootFolder="/home/ubuntu" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

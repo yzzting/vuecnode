@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06e75473-70d9-4878-8f00-146bdca8d87e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/login.vue" afterPath="$PROJECT_DIR$/src/components/login.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vuecnode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,28 +26,7 @@
     <favorites_list name="vuecnode" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/login.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,6 +35,43 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/components/login.vue" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/stylesheets/style.css" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/posts_list.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/main.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/main.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/includes/loading.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/application/not_found.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/application/layout.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/helpers/config.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/includes/access_denied.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/includes/hedaer.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/posts_lsit.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/posts_item.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/lib/permissions.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/application/layout.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/includes/error.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/helpers/error.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/includes/error.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/post_submit.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/.meteor/packages" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/post_submit.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/post_edit.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/post_edit.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/server/fixtures.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/post_page.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/post_item.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/post_page.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/comments/comments_submit.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/comments/comments_submit.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/comments/comments_item.html" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/comments/comments_item.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/server/publications.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/collections/posts.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/collections/comments.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/client/templates/post/post_item.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/lib/router.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/stock-command-line/src/index.js" />
+        <option value="&lt;b68aed51-06bc-4ba4-a728-304d19f9917f&gt;/.zshrc" />
       </list>
     </option>
   </component>
@@ -71,9 +87,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -82,7 +99,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -102,18 +119,32 @@
     <panes>
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vuecnode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="editor.config.accepted" value="true" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -141,6 +172,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -179,33 +216,58 @@
       <updated>1472966659117</updated>
       <workItem from="1472966660651" duration="407000" />
       <workItem from="1472967091230" duration="2118000" />
+      <workItem from="1473782123255" duration="5034000" />
+      <workItem from="1474005458436" duration="29000" />
+      <workItem from="1474005567834" duration="7186000" />
+      <workItem from="1474092868089" duration="8977000" />
+      <workItem from="1474205186496" duration="8783000" />
+      <workItem from="1474295944484" duration="3687000" />
+      <workItem from="1474345575059" duration="608000" />
+      <workItem from="1474468786883" duration="2023000" />
+      <workItem from="1474505999355" duration="4228000" />
+      <workItem from="1474597812472" duration="4469000" />
+      <workItem from="1474727867219" duration="2072000" />
+      <workItem from="1474870813027" duration="3906000" />
+      <workItem from="1474877856605" duration="1193000" />
+      <workItem from="1475208397655" duration="188000" />
+      <workItem from="1475221598967" duration="44000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2525000" />
+    <option name="totallyTimeSpent" value="54952000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.115866385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21145038" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2677761" sideWeight="0.49178532" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32799146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49750414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2677761" sideWeight="0.50821465" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -220,7 +282,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -228,7 +292,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -241,19 +318,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="504">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/login.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
-          <folding />
+        <state relative-caret-position="358">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="webServersAuthStorage">
+    <data>AAAAsARi7rg0TeYc20ytUar7sjmD5x8Hnfltwyt3bEMtV5edL7XKLJQCBLtdSnXxzeAqLKNQfOTp1IUU1EF7axH6jXfHvCYJlOvBqQH9Ri5o2c987sOD5gEMDuenD5cyu51waGkz34Q/WVjM1ns1vAwmQzeXuznnXSfI4EW/0KlSsluUlyXjy/5HGsM4QuDhUY6CEzTz3BXjV6rvipLKF7Z5BdMRwVDHqod+iEMBolHC57Tmt3JUdKqe4stQhFFSDB4LGg==</data>
   </component>
 </project>

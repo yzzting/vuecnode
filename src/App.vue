@@ -1,84 +1,42 @@
-<style lang="less">
-
-.bottom-box {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin-top: 40px;
-}
-
-.bottom-box {
-    a {
-        text-decoration: none;
-        color: #000;
-        &:active,
-        &focus {
-            color: #42b983!important;
-        }
-    }
-}
-
-.main {
-    overflow-x: hidden;
-}
-
-</style>
-
 <template>
-
-<div class="main">
-    <router-view></router-view>
-    <div class="bottom-box" v-if="!isLogin">
-        <mt-tabbar :selected.sync="btn">
-            <mt-tab-item id="list">
-                <img src="./assets/node.png" alt="photo" slot="icon" /> 话题
-            </mt-tab-item>
-            <mt-tab-item id="message">
-                <img src="./assets/message.png" alt="photo" slot="icon" /> 消息
-            </mt-tab-item>
-            <mt-tab-item id="user">
-                <img src="./assets/me.png" alt="photo" slot="icon" /> 我的
-            </mt-tab-item>
-            <mt-tab-item id="about">
-                <img src="./assets/about.png" alt="photo" slot="icon" /> 关于
-            </mt-tab-item>
-        </mt-tabbar>
-    </div>
-</div>
-
+  <div id="app">
+      <yzz-header fixed title="主题">
+          <yzz-button icon="more" slot="left"></yzz-button>
+      </yzz-header>
+      <section class="leftBox">
+          <div class="userInfo">
+              <div class="avertar">
+                  <img src="#" alt="#">
+              </div>
+              <div class="userName">
+                  <p>yzzting</p>
+              </div>
+          </div>
+          <div class="listItem">
+              <yzz-item>全部</yzz-item>
+              <yzz-item>精华</yzz-item>
+              <yzz-item>分享</yzz-item>
+              <yzz-item>问答</yzz-item>
+              <yzz-item>招聘</yzz-item>
+              <yzz-item>消息</yzz-item>
+              <yzz-item>关于</yzz-item>
+          </div>
+      </section>
+  </div>
 </template>
 
 <script>
-
+import { Header , Button , TabItem } from 'mint-ui'
 export default {
-    data() {
-            return {
-                btn: this.$route.path.split('/')[1]
-            }
-        },
-        computed: {
-            isLogin() {
-                return this.$route.path === '/' || this.$route.path === '/login'
-            }
-        },
-        watch: {
-            'btn': function(val) {
-                console.info('from app', this.$route)
-                if (this.btn === 'user') {
-                    this.$route.router.go({
-                        name: 'user',
-                        params: {
-                            loginname: localStorage.loginname
-                        }
-                    })
-                } else {
-                    this.$route.router.go({
-                        name: this.btn
-                    })
-                }
-            }
-        }
+  name: 'app',
+  components: {
+    'yzz-header':Header,
+    'yzz-button':Button,
+    'yzz-item': TabItem,
+  }
 }
-
 </script>
+
+<style lang="scss">
+  @import "../static/scss/app";
+</style>
